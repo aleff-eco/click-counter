@@ -5,7 +5,7 @@
 }
 
 html, body{
-  background-color: #408ddf;
+  background-color: rgb(133, 176, 223);
 }
 
 .App{
@@ -13,8 +13,7 @@ html, body{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
-  font-family: Lato, sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .click-logo-container{
@@ -22,7 +21,7 @@ html, body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4%;
+  margin-top: 6%;
 }
 
 .click-logo{
@@ -33,18 +32,24 @@ html, body{
 }
 
 .principal-container{
-  width: 400px;
-  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 55px;
+  min-width: 500px;
 }
 
-.counter-container{
+.counter-text-container{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 2%;
+}
+
+.counter-container{
+  margin: 45px ;
+  border: 8px solid white;
+  border-radius: 35px;
 }

@@ -5,9 +5,7 @@ import Counter from "./components/Counter";
 import { useState } from "react";
 
 function App() {
-
   const [clickNumber, setClickNumber] = useState(0);
-
 
   const clickEvent = () => {
     setClickNumber(clickNumber + 1);
@@ -19,23 +17,25 @@ function App() {
 
   return (
     <div className="App">
-      <div className="click-logo-container">
-        <img
-          className="click-logo"
-          src={clickCounterLogo}
-          alt="click counter icon"
-        ></img>
-      </div>
       <div className="counter-container">
-        <Counter clickNumber={clickNumber} />
-      </div>
-      <div className="principal-container">
-        <Button text="Click" clickButton={true} clickManagment={clickEvent} />
-        <Button
-          text="Restart"
-          clickButton={false}
-          clickManagment={restartEvent}
-        />
+        <div className="click-logo-container">
+          <img
+            className="click-logo"
+            src={clickCounterLogo}
+            alt="click counter icon"
+          ></img>
+        </div>
+        <div className="counter-text-container">
+          <Counter clickNumber={clickNumber} />
+        </div>
+        <div className="principal-container">
+          <Button text="Click" clickButton={true} clickManagment={clickEvent} />
+          <Button
+            text="Restart"
+            clickButton={false}
+            clickManagment={restartEvent}
+          />
+        </div>
       </div>
     </div>
   );
